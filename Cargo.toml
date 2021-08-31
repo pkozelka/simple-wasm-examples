@@ -1,0 +1,15 @@
+[package]
+name = "simple-wasm-examples"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[workspace]
+members = ["e0-trivial"]
+
+[profile.release]
+lto = true
+#opt-level = 'z'
