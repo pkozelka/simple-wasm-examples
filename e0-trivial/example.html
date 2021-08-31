@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>hi_js_console - Rust</title>
+</head>
+<body>
+<script type="module">
+    let importObject;
+    WebAssembly.instantiateStreaming(fetch('../target/wasm32-unknown-unknown/release/e0_trivial.wasm'), importObject)
+        .then(wasm => {
+            let mylib = wasm.instance.exports;
+            //
+            let total = mylib.compute_sum(1, -2, 3n, BigInt(-4), 5.7, -6.8);
+            console.log("total is (", total, ")");
+            csum.innerText = total;
+        });
+</script>
+
+<h1>compute_sum</h1>
+<p id="csum">?</p>
+
+</body>
+</html>

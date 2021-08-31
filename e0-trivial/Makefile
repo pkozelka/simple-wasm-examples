@@ -12,3 +12,7 @@ wat:
 run-wasmer:
 	wasmer run --invoke compute_sum $(WASM_BIN) -- 1 -2 3 -4 5.7 -6.8
 	# prints -3.100000190734863
+
+run-webserver:
+	# open http://localhost:9090/e0-trivial/example.html in your browser
+	microserver ..

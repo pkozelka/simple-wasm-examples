@@ -14,6 +14,12 @@ Demonstrates:
 - any smaller types like `u8` or `i16` etc become `I32` as well
 - still, the code internally treats the signed and unsigned types differently - see `make wat`
 
+## HTML client observations
+
+(use page `http://localhost:9090/e0-trivial/example.html` served from the project root directory)
+
+- 64bit types must be passed as `BigInt`, ie. using either `n` suffix or the `BigInt()` constructor
+
 ## WAT
 
 ```
