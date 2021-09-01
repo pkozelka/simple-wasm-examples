@@ -8,6 +8,7 @@ The binaries are currently produced by Rust.
 ## Examples
 
 * [e0-trivial](e0-trivial/README.md) - little or no tools needed
+  * [Bash client](e0-trivial/Makefile) - use targets `run-wasmer`, `run-wasmtime`
   * [HTML client](e0-trivial/example.html)
   * [Java client](e0-trivial-java-client/) using wasmtime library for Java
   * [Python client](e0-trivial-python-client/) using wasmtime [library for Python](https://pypi.org/project/wasmtime/)
@@ -34,6 +35,7 @@ Some tools help with defining bindings and they are going to be used and demonst
 Some of them are:
 
 - wasm-bindgen
+- [WABT](https://github.com/WebAssembly/wabt)
 - [wasm-pack](https://rustwasm.github.io/wasm-pack/)
 - [WASI - WebAssembly System Interface](https://github.com/webassembly/wasi)
 - WebAssembly Interface Types
