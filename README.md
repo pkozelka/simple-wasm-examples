@@ -8,6 +8,8 @@ The binaries are currently produced by Rust.
 ## Examples
 
 * [e0-trivial](e0-trivial/README.md) - little or no tools needed
+  * [HTML client](e0-trivial/example.html)
+  * [Java client](e0-trivial-java-client/)
 * _more to come soon_
 
 ## Structure
