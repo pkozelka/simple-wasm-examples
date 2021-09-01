@@ -9,7 +9,8 @@ The binaries are currently produced by Rust.
 
 * [e0-trivial](e0-trivial/README.md) - little or no tools needed
   * [HTML client](e0-trivial/example.html)
-  * [Java client](e0-trivial-java-client/)
+  * [Java client](e0-trivial-java-client/) using wasmtime library for Java
+  * [Python client](e0-trivial-python-client/) using wasmtime [library for Python](https://pypi.org/project/wasmtime/)
 * _more to come soon_
 
 ## Structure
