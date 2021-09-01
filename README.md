@@ -11,7 +11,8 @@ The binaries are currently produced by Rust.
   * [Bash client](e0-trivial/Makefile) - use targets `run-wasmer`, `run-wasmtime`
   * [HTML client](e0-trivial/example.html)
   * [Java client](e0-trivial-java-client/) using wasmtime library for Java
-  * [Python client](e0-trivial-python-client/) using wasmtime [library for Python](https://pypi.org/project/wasmtime/)
+  * [Python client](e0-trivial-python-client/) using [wasmtime library for Python](https://pypi.org/project/wasmtime/)
+  * [Rust client](e0-trivial-rust-client) using [wasmtime library for Rust](https://github.com/bytecodealliance/wasmtime)
 * _more to come soon_
 
 ## Structure

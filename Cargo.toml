@@ -1,5 +1,5 @@
 [workspace]
-members = ["e0-trivial"]
+members = ["e0-trivial", "e0-trivial-rust-client"]
 
 [profile.release]
 lto = true
