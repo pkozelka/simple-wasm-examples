@@ -2,11 +2,23 @@
 
 This example exposes single function `compute_sum()` which just sums parameters of different types.
 
+Note that without any *bindgen support, WASM is a desperate place where no much types can be used - only integers (`I32`, `I64`) and floating-point numbers (`F32`, `F64`).
+Everything else (including strings) requires passing via shared memory, which will be demonstrated in other examples.
+
 Demonstrates:
 
-- no tools needed; we build with cargo
+- pure WebAssembly, minimum tools needed; we build with cargo
 - target platform `wasm-unknown-unknown` is configured as default in `.cargo/config` so we don't have to specify the `--target` option in `cargo`
 - size is heavily reduced by configuring `lto = true` in the root `Cargo.toml` file (~1.5M -> 282 bytes)
+
+## Tools needed
+
+- [Cargo](https://www.rust-lang.org/tools/install)
+- target `wasm32-unknown-unknown`
+  - install with `rustup target add wasm32-unknown-unknown --toolchain nightly`
+- optional: [wasmer](https://wasmer.io/) (for `make run-wasmer`)
+- optional: [wabt](https://nicedoc.io/WebAssembly/wabt) (for `make wat`)
+- optional: [microserver](https://github.com/robertohuertasm/microserver) (for `make run-webserver`) - but you can use any other tool to expose dir on HTTP
 
 ## Observations
 
